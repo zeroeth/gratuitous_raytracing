@@ -1,0 +1,4 @@
+POV and lux scene files for mirror balls over checker planes with a .. grayish sky. to be rendered at unnecessary resolutions
+
+example usage:
+povray mirror_sphere.pov +Osphere.png +W1680 +H1050 +FN16 +Q9 +A0.0 +AM2
