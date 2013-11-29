@@ -1,9 +1,13 @@
 #include "colors.inc"
 
+global_settings {
+	ambient_light <0,0,0>
+	}
+
 camera {
-  location <0,0,3>
+  location <0,3,0>
   look_at  <2,2,2>
-  sky      <0,0,1>
+  sky        y
 }
 
 sphere {
@@ -14,13 +18,18 @@ sphere {
 }
 
 plane {
-  <0,0,-1>, 1
+  y, 0
   pigment {
-    checker color White, color Black
+      checker
+      pigment { White },
+      pigment { Black }
+      scale 1.0
   }
 }
 
 light_source {
   <1,1,1>
   color White
+  fade_power 3
+  fade_distance 10
 }
