@@ -1,13 +1,14 @@
 #include "colors.inc"
 
 global_settings {
-	ambient_light <0,0,0>
-	}
+  ambient_light <0,0,0>
+}
 
 camera {
   location <0,3,0>
   look_at  <2,2,2>
-  sky        y
+  sky      y
+  right    x * image_width / image_height
 }
 
 sphere {
